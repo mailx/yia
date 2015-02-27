@@ -1,0 +1,243 @@
+2013/12/04 09:39:56 [error] [exception.CDbException] could not find driver
+2013/12/04 09:39:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Apache2.2\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 D:\Apache2.2\htdocs\yii\framework\web\CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 D:\Apache2.2\htdocs\yii\demos\blog\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 D:\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#10 D:\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\Apache2.2\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\Apache2.2\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\Apache2.2\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\Apache2.2\htdocs\yii\demos\blog\index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/demos/blog/index.php
+---
+2013/12/04 09:39:59 [error] [exception.CDbException] could not find driver
+2013/12/04 09:39:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Apache2.2\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 D:\Apache2.2\htdocs\yii\framework\web\CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 D:\Apache2.2\htdocs\yii\demos\blog\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 D:\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#10 D:\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\Apache2.2\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\Apache2.2\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\Apache2.2\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#19 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\Apache2.2\htdocs\yii\demos\blog\index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/demos/blog/index.php/post/index
+HTTP_REFERER=http://localhost/yii/demos/blog/index.php
+---
+2013/12/04 09:40:03 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'This application requires that PHP was compiled with Blowfish support for crypt().' in D:\Apache2.2\htdocs\yii\demos\blog\protected\controllers\SiteController.php:66
+Stack trace:
+#0 D:\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#1 D:\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 D:\Apache2.2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 D:\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#5 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#6 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\Apache2.2\htdocs\yii\demos\blog\index.php(11): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/demos/blog/index.php/site/login
+HTTP_REFERER=http://localhost/yii/demos/blog/index.php/site/contact
+---
+2013/12/04 09:40:03 [error] [exception.CDbException] could not find driver
+2013/12/04 09:40:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Apache2.2\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 D:\Apache2.2\htdocs\yii\framework\web\CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 D:\Apache2.2\htdocs\yii\demos\blog\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 D:\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#10 D:\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\Apache2.2\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\Apache2.2\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\Apache2.2\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#19 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\Apache2.2\htdocs\yii\demos\blog\index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/demos/blog/index.php/post/index
+HTTP_REFERER=http://localhost/yii/demos/blog/index.php/site/login
+---
+2013/12/04 09:42:24 [error] [exception.CDbException] could not find driver
+2013/12/04 09:42:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Apache2.2\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 D:\Apache2.2\htdocs\yii\framework\web\CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 D:\Apache2.2\htdocs\yii\demos\blog\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 D:\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#10 D:\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\Apache2.2\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\Apache2.2\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\Apache2.2\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\Apache2.2\htdocs\yii\demos\blog\index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/demos/blog/index.php
+---
+2013/12/04 10:06:38 [error] [exception.CDbException] could not find driver
+2013/12/04 10:06:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Apache2.2\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 D:\Apache2.2\htdocs\yii\framework\web\CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 D:\Apache2.2\htdocs\yii\demos\blog\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 D:\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#10 D:\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\Apache2.2\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\Apache2.2\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\Apache2.2\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\Apache2.2\htdocs\yii\demos\blog\index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/demos/blog/index.php
+---
+2013/12/04 16:15:02 [error] [exception.CDbException] could not find driver
+2013/12/04 16:15:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Apache2.2\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 D:\Apache2.2\htdocs\yii\framework\web\CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 D:\Apache2.2\htdocs\yii\demos\blog\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 D:\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#10 D:\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\Apache2.2\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\Apache2.2\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\Apache2.2\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\Apache2.2\htdocs\yii\demos\blog\index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/demos/blog/index.php
+HTTP_REFERER=http://localhost/yii/demos/blog/
+---
+2013/12/04 16:15:06 [error] [exception.CDbException] could not find driver
+2013/12/04 16:15:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Apache2.2\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 D:\Apache2.2\htdocs\yii\framework\web\CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 D:\Apache2.2\htdocs\yii\demos\blog\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 D:\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#10 D:\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\Apache2.2\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\Apache2.2\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\Apache2.2\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#19 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\Apache2.2\htdocs\yii\demos\blog\index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/demos/blog/index.php/post/index
+HTTP_REFERER=http://localhost/yii/demos/blog/index.php
+---
+2013/12/04 16:15:09 [error] [exception.CDbException] could not find driver
+2013/12/04 16:15:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php:387
+Stack trace:
+#0 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Apache2.2\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Apache2.2\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 D:\Apache2.2\htdocs\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Post))
+#7 D:\Apache2.2\htdocs\yii\framework\web\CActiveDataProvider.php(74): CActiveRecord::model('Post')
+#8 D:\Apache2.2\htdocs\yii\demos\blog\protected\controllers\PostController.php(132): CActiveDataProvider->__construct('Post', Array)
+#9 D:\Apache2.2\htdocs\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#10 D:\Apache2.2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\Apache2.2\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\Apache2.2\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\Apache2.2\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\Apache2.2\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\Apache2.2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#19 D:\Apache2.2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#20 D:\Apache2.2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\Apache2.2\htdocs\yii\demos\blog\index.php(11): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/demos/blog/index.php/post/index
+HTTP_REFERER=http://localhost/yii/demos/blog/index.php/post/index
+---
